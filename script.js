@@ -44,7 +44,7 @@ $.each(links,function(k,v) {
 });
 
 $(window).on('load',function() {
-    $('#load').fadeOut();
+    $('#load').fadeOut(300);
     $('body').css({'background-image': 'url(img/' + Math.floor(Math.random() * 33) + '.jpg)'});
     $('#search input').focus();
 });
