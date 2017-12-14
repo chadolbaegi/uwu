@@ -13,6 +13,8 @@ body, html {
     width:100%;
     margin:0 auto;
     background:var(--night);
+    background-size:cover;
+    background-repeat:no-repeat;
     display:flex;
     align-items:center;
     font-family:Roboto;
