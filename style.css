@@ -1,0 +1,136 @@
+:root {
+    --night:#212121;
+    --accent:#33a1c9;
+    --a:#e91e63;
+	--b:#00bcd4;
+	--c:#8bc34a;
+	--d:#ffc107;
+	--e:#9c27b0;
+}
+
+body, html {
+    height:100%;
+    width:100%;
+    margin:0 auto;
+    background:var(--night);
+    display:flex;
+    align-items:center;
+    font-family:Roboto;
+    cursor:default;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+}
+
+#load {
+    height:100%;
+    width:100%;
+    background:var(--night);
+    position: absolute;
+}
+
+#overlay {
+    height:100%;
+    width:100%;
+    position: absolute;
+    background:rgba(0,0,0,0.5);
+}
+
+#hero {
+    margin:0 auto;
+    width:80%;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    z-index:5000;
+}
+
+#hero h1 {
+    letter-spacing: 5px;
+    color:#fff;
+    text-transform:uppercase;
+    font-weight: 300;
+}
+
+#hero #search input {
+    padding:10px 20px 10px 10px;
+    background:transparent;
+    border:1px solid;
+    border-color:rgba(255,255,255,0.5);
+    color:#808080;
+    transition:300ms all;
+    font-size:0.9em;
+    border-radius: 40px;
+    height: 40px;
+    padding:5px 20px;
+}
+
+#search input::-moz-placeholder, #search input::-webkit-input-placeholder {
+    color:#ccc;
+}
+
+#search input:focus {
+    color:#fff !important;
+    border-color:var(--accent) !important;
+    transition:300ms all;
+}
+
+#links {
+    display:flex;
+    flex-direction:column;
+    justify-content:flex-start;
+}
+
+#hero > * {
+    padding:15px 0px;
+}
+
+#links ul {
+    padding:0;
+}
+
+#links ul li {
+    list-style-type:none;
+    display: inline-block;
+    color:#fff;
+    transition:150ms all;
+    font-weight:300;
+    letter-spacing:0.3px;
+}
+
+#links ul li:hover {
+    transition:150ms all;
+}
+
+#links > ul > li:nth-child(1) {
+    text-transform:uppercase;
+    letter-spacing:3px;
+}
+
+#art > li:nth-child(1), #art > a > li:hover {
+    color:var(--a);
+}
+
+#school > li:nth-child(1), #school > a > li:hover {
+    color:var(--b);
+}
+
+#work > li:nth-child(1), #work > a > li:hover {
+    color:var(--c);
+}
+
+#fun > li:nth-child(1), #fun > a > li:hover {
+    color:var(--d);
+}
+
+a, a:visited, a:focus {
+    color:inherit !important;
+}
+
+#links ul li {
+    margin:0 10px;
+}
+
+#link-template, #template {
+    display:none;
+}
